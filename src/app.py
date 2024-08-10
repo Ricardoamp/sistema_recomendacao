@@ -9,7 +9,7 @@ from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-df_raw = pd.read_csv('amazon.csv')
+df_raw = pd.read_csv('src/amazon.csv')
 
 # Função stemming
 def stem(text):
