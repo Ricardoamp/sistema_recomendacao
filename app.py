@@ -1,9 +1,13 @@
 import streamlit as st
-from src.load_data import carregar_dados
 from src.recomendacao import sistema_recomendacao
+import pickle
 
-# Carregar os dados
-df7, similaridades = carregar_dados()
+# Carregar os dados previamente salvos
+with open('data/df7.pkl', 'rb') as f:
+    df7 = pickle.load(f)
+
+with open('data/similaridades.pkl', 'rb') as f:
+    similaridades = pickle.load(f)
 
 # Configurar o aplicativo Streamlit
 st.title('Sistema de Recomendação de Produtos')
