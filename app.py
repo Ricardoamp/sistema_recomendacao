@@ -1,5 +1,5 @@
 import streamlit as st
-from src.recomendacao import sistema_recomendacao
+from recomendacao import sistema_recomendacao
 import pickle
 
 # Carregar os dados previamente salvos
