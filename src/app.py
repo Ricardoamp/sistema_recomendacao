@@ -14,7 +14,7 @@ parser_ps = PorterStemmer()
 # Função para carregar os dados com cache para melhorar o desempenho
 @st.cache_data
 def carregar_dados():
-    return pd.read_csv('src/amazon.csv')
+    return pd.read_csv('data/amazon.csv')
 
 # Carregar os dados
 df_raw = carregar_dados()
