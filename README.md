@@ -4,7 +4,7 @@
 Foto de <a href="https://unsplash.com/pt-br/@christianw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christian Wiediger</a> na <a href="https://unsplash.com/pt-br/fotografias/smartphone-samsung-galaxy-preto-exibindo-o-logotipo-da-amazon-rymh7EZPqRs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
   
-Este projeto é um sistema de recomendação de produtos de um dataset da Amazon baseado em técnicas de ciência de dados e aprendizado de máquina. O processo segue o modelo CRISP-DM, que é uma metodologia padrão para a mineração de dados.
+Este projeto é um sistema de recomendação de produtos utilizando um dataset da Amazon, baseado em técnicas de ciência de dados e aprendizado de máquina. O foco principal está na utilização de Processamento de Linguagem Natural (PLN) para extrair recomendações a partir das descrições textuais dos produtos. As técnicas de PLN são empregadas para analisar e transformar o texto dos produtos em uma forma que possibilite a comparação e recomendação de produtos semelhantes. O processo segue o modelo CRISP-DM, uma metodologia padrão para a mineração de dados, adaptada para transformar dados textuais em recomendações relevantes.
 
 ## 1. Entendimento do Negócio
 O objetivo deste projeto é desenvolver um sistema de recomendação que sugira produtos semelhantes com base nas preferências do usuário. Isso é útil para ajudar os consumidores a encontrar produtos relacionados e aumentar a satisfação e as vendas.
