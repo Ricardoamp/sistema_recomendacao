@@ -1,9 +1,10 @@
 # Sistema de Recomendação de Produtos
 ![Img amazon](img/img1.jpg)
 
-Foto de <a href="https://unsplash.com/pt-br/@christianw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christian Wiediger</a> na <a href="https://unsplash.com/pt-br/fotografias/smartphone-samsung-galaxy-preto-exibindo-o-logotipo-da-amazon-rymh7EZPqRs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
-  
+<p style="text-align: center; color: #888; font-size: 0.9em;">
+  Foto de <a href="https://unsplash.com/pt-br/@christianw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: #888;">Christian Wiediger</a> na <a href="https://unsplash.com/pt-br/fotografias/smartphone-samsung-galaxy-preto-exibindo-o-logotipo-da-amazon-rymh7EZPqRs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: #888;">Unsplash</a>
+</p>
+
 Este projeto é um sistema de recomendação de produtos utilizando um dataset da Amazon, baseado em técnicas de ciência de dados e aprendizado de máquina. O foco principal está na utilização de Processamento de Linguagem Natural (PLN) para extrair recomendações a partir das descrições textuais dos produtos. As técnicas de PLN são empregadas para analisar e transformar o texto dos produtos em uma forma que possibilite a comparação e recomendação de produtos semelhantes. O processo segue o modelo CRISP-DM, uma metodologia padrão para a mineração de dados, adaptada para transformar dados textuais em recomendações relevantes.
 
 ## 1. Entendimento do Negócio
@@ -13,20 +14,14 @@ O objetivo deste projeto é desenvolver um sistema de recomendação que sugira 
 Fonte dos Dados: https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset
 
 Os dados são obtidos de um arquivo CSV que contém informações sobre produtos, incluindo:
+* product_id: Identificador único do produto.
+* product_name: Nome do produto.
+* category: Categoria do produto.
+* about_product: Descrição do produto.
+* review_title: Título da avaliação.
+* review_content: Conteúdo da avaliação.
 
-product_id: Identificador único do produto.
-
-product_name: Nome do produto.
-
-category: Categoria do produto.
-
-about_product: Descrição do produto.
-
-review_title: Título da avaliação.
-
-review_content: Conteúdo da avaliação.
-
-# Objetivo dos Dados
+### Objetivo dos Dados
 Transformar essas informações em uma forma que possa ser usada para calcular a similaridade entre produtos e gerar recomendações.
 
 ## 3. Preparação dos Dados
@@ -38,10 +33,8 @@ A preparação dos dados inclui as seguintes etapas:
 * Criação de Tags: Combina informações de diferentes colunas para criar uma representação textual unificada dos produtos.
 ### Criação de Modelos
 * Vectorização: Converte o texto dos produtos em vetores numéricos usando CountVectorizer.
-
 * Cálculo de Similaridade: Avalia a similaridade entre produtos com base nos vetores numéricos.
 ## 4. Modelagem
-O script sistema_recomendacao.py implementa o modelo de recomendação usando:
 
 * Vetorização de Texto:
 Utiliza o CountVectorizer para transformar descrições dos produtos em vetores.
